@@ -1,0 +1,8 @@
+const store = configureStore({
+  reducer: {
+    [appSlice.reducerPath] : appSlice.reducer
+    },
+  middlewawre: getDefaultMiddlewawre => 
+    getDefaultMiddleware().concat(appSlice.middleware),
+  devTools: true
+})
